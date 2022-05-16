@@ -16,10 +16,21 @@ import React from "react";
 
 const Answer =({name})=>{
     return (
-    <li className="list"> 
+    <li className="list" > 
      {name}
     </li>
         );
 };
 
 export default Answer;
+
+
+
+const Answer2=({name1,type})=>{
+    return(
+        <li className="list" type={type}>
+            {name1}
+        </li>
+    );
+};
+export {Answer2};

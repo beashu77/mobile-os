@@ -1,7 +1,8 @@
 import logo from './logo.svg';
 import './App.css';
 import './mobile.css';
-import Answer from './components/Mobile';
+import Answer,{Answer2} from './components/Mobile';
+
 
 
 
@@ -15,15 +16,15 @@ function App(){
 
 
   let info2=[
-    {name:"Samsung"},
-    {name:"HTC"},
-    {name:"Micromax"},
-    {name:"Apple"  }
+    {name1:"Samsung", type:"square"},
+    {name1:"HTC", type:"square"},
+    {name1:"Micromax", type:"disc"},
+    {name1:"Apple", type:"circle"  }
 
   ]
         return (
           
-            <div className="App">
+            <div >
             {/* <Answer name="Siya" place="India"></Answer> */}
             <h1 className='Title'>Mobile Operating System</h1>
         
@@ -38,7 +39,7 @@ function App(){
                     
                     {info2.map((user)=>(
 
-                        <Answer {...user} />
+                        <Answer2 {...user} />
                     
                     ))}
             </div>
